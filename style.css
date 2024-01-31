@@ -481,13 +481,18 @@ body {
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
 }
-
+.featured .featured-slider .box:hover .image{
+    transform: translateY(6rem);
+}
 .featured.featured-slider.box.image img {
     height: 25rem;
 }
 
 .featured .featured-slider .box .content {
     padding: 1.5rem;
+    background: #eee;
+    font-size: 1.6rem;
+
     border-radius: .5rem;
     -webkit-border-radius: .5rem;
     -moz-border-radius: .5rem;
@@ -501,9 +506,17 @@ body {
 
 .featured .featured-slider .box .content .price {
     font-size: 2.2rem;
-    color: var(--green-color);
+    color: var(--black);
     padding-top: 1rem;
 }
+
+.featured.featured-slider.box.content.price span {
+    font-size: 1.5rem;
+    color: var(--green-color);
+    text-decoration: line-through;
+    padding-left: 1rem;
+}
+
 .featured .featured-slider .box .icons {
     border-bottom: var(--border-hover);
     position: absolute;
@@ -532,6 +545,15 @@ body {
 }
 .featured .featured-slider .box .icons a:hover {
     color: var(--green-color);
+    color:#fff;
+}
+.featured .featured-slider .box:hover .icons {
+    transform: translateY(0);
+
+}
+.featured .featured-slider .box .icons a:active {
+    color: var(--green-color);
+
 }
 .featured.featured-slider.box.icons a:active {
     color: var(--green-color);
@@ -542,6 +564,91 @@ body {
 .featured.featured-slider.box.icons a:visited {
     color: var(--green-color);
 }
+
+/************************************************************/
+
+.swiper-button-next,
+.swiper-button-prev {
+    background: #fff;
+    color: var(--black);
+    padding: 10px 15px;
+    height: 4rem;
+    width: 4rem;
+    border: var(--border-hover);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    transition: all.3s ease;
+    -webkit-transition: all.3s ease;
+    -moz-transition: all.3s ease;
+    -ms-transition: all.3s ease;
+    -o-transition: all.3s ease;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2rem;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: var(--black);
+    color: #fff;
+    border: var(--border-hover);
+}
+.swiper-slide .image img {
+    height: 25rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    transition: all.3s ease;
+    -webkit-transition: all.3s ease;
+
+}
+
+.newsletter {
+    background: url(images/newsletter.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.newsletter form {
+    max-width: 45rem;
+    margin-left: auto;
+    text-align: center;
+    padding: 5rem 0;
+
+}
+
+.newsletter form h3 {
+    font-size: 2.2rem;
+    color: #fff;
+    padding-bottom: .7rem;
+    font-weight: normal;
+}
+.newsletter form .box {
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    text-transform: none;
+}
+.newsletter form.box:hover {
+    background: var(--black);
+    color: #fff;
+}
+
 
 
 

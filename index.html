@@ -131,10 +131,10 @@
 
     <section class="featured" id="featured">
         <h1 class="heading"><span>Featured books</span></h1>
-        <div class="featured-slider">
-            <div class="wrapper">
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
 
-                <div class="box">
+                <div class="swiper-slide box">
                     <div class="icons">
                         <a href="#" class="fas fa-search"></a>
                         <a href="#" class="fas fa-heart"></a>
@@ -150,7 +150,7 @@
                         <a href="#" class="btn">Add to cart</a>
                     </div>
                 </div>
-                <div class="box">
+                <div class="swiper-slide box">
                     <div class="icons">
                         <a href="#" class="fas fa-search"></a>
                         <a href="#" class="fas fa-heart"></a>
@@ -166,7 +166,7 @@
                         <a href="#" class="btn">Add to cart</a>
                     </div>
                 </div>
-                <div class="box">
+                <div class="swiper-slide box">
                     <div class="icons">
                         <a href="#" class="fas fa-search"></a>
                         <a href="#" class="fas fa-heart"></a>
@@ -182,10 +182,8 @@
                         <a href="#" class="btn">Add to cart</a>
                     </div>
                 </div>
-                <div class="box">
+                <div class="swiper-slide box">
                     <div class="icons">
-                    <div class="box">
-                        <div class="icons">
                             <a href="#" class="fas fa-search"></a>
                             <a href="#" class="fas fa-heart"></a>
                             <a href="#" class="fas fa-eye"></a>
@@ -200,7 +198,7 @@
                             <a href="#" class="btn">Add to cart</a>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="swiper-slide box">
                         <div class="icons">
                             <a href="#" class="fas fa-search"></a>
                             <a href="#" class="fas fa-heart"></a>
@@ -215,14 +213,15 @@
                             <div class="price">$15.99<span>$20.99</span></div>
                             <a href="#" class="btn">Add to cart</a>
                         </div>
-                    </div>iv class="icons">
+                    <div class="swiper-slide box">
+                    <div class="icons">
                         <a href="#" class="fas fa-search"></a>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-eye"></a>
-
                     </div>
                     <div class="image">
                         <img src="images/book5.jpg" alt="">
+                    </div>
                     </div>
                     <div class="content">
                         <h3>Featured books</h3>
@@ -231,19 +230,34 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-
-        </div>
+    </div>
 
     </section>
+
+    <!-- newsletter Section -->
+    <section class="newsletter">
+
+    <form action="">
+        <h3>subscribe for latest updates</h3>
+        <input type="email" name="" placeholder="enter your email" id="" class="box">
+        <input type="submit" value="subscribe" class="btn">
+    </form>
+    </section>
+
+
 
     <!-- Scripts -->
     
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin
     <script>
-        var swiper = new Swiper(".books-slider", {
+        var swiper = new Swiper(".books-slider ,.featured-slider", {
             loop : true,
             slidesPerView: 4,
             spaceBetween: 30,
@@ -295,5 +309,6 @@
           },
         });
       </script>
+      
 </body>
 </html>
