@@ -31,7 +31,7 @@ window.onload = () => {
         document.querySelector('.header .header-2').classList.remove('active');
     }
 }
-
+/*
 var swiper = new Swiper(".books-slider", {
     loop: true,
     breakpoints: {
@@ -47,3 +47,4 @@ var swiper = new Swiper(".books-slider", {
         },
     
 });
+*/

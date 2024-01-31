@@ -321,13 +321,24 @@ body {
     flex-wrap: wrap;
     gap: 1.5rem;
 }
-
+.books-slider a img {
+    height: 30rem;
+    width: 25rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius:.5rem;
+    -o-border-radius:.5rem;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all .3s ease;
+}
 .home .row .content {
     flex: 1 1 42rem;
 }
 
 .home .row .books-slider {
-    flex: 1 1 42rem;
+    flex: 1 1 52rem;
     text-align: center;
     margin-top: 4rem;
 }
@@ -342,7 +353,19 @@ body {
     -o-border-radius: .5rem;
 }
 .home .row .books-slider a img {
-    height:25rem;
+    height:22rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
 
 }
 .home .row .books-slider a:hover img {
@@ -351,7 +374,7 @@ body {
 
 .home .row .books-slider .stand {
     width: 100%;
-    margin-top: -5rem;
+    margin-top: -15rem;
 }
 
 .home .row .content h3 {
@@ -364,6 +387,14 @@ body {
     font-size: 1.2rem;
     line-height: 2;
     padding: 1rem 0;
+}
+.books-slider a {
+    margin: 0;
+    overflow: hidden;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+
 }
 
 
@@ -387,7 +418,52 @@ body {
         padding: 2rem;
     }
     section {
-        padding: 3rem 2rem;
+        padding: 2rem 2rem;
+    }
+    section h3 {
+        font-size: 2.5rem;
+    }
+    section p {
+        font-size: 1.2rem;
+    }
+    section a {
+        font-size: 1.5rem;
+    }
+    section a:hover {
+        color: var(--green-color);
+    }
+    .content-wrapper {
+        padding: 2rem;
+
+    }
+    .books-slider {
+        padding: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+    }
+    .books-slider a {
+        margin: 0;
+        overflow: hidden;
+        border-radius: .5rem;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+
+    }
+    .books-slider a img {
+        height: 30rem;
+        width: 25rem;
+        border-radius: .5rem;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        -ms-border-radius:.5rem;
+        -o-border-radius:.5rem;
+        object-fit: cover;
+        cursor: pointer;
+        transition: all .3s ease;
     }
 }
 
@@ -435,7 +511,7 @@ body {
         text-align: center;
     }
     .home .row .content h3 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 }
 

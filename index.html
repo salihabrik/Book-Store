@@ -134,6 +134,11 @@
     <script src="script.js"></script>
     <script>
         var swiper = new Swiper(".books-slider", {
+            loop : true,
+            slidesPerView: 4,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
             effect: "coverflow",
             grabCursor: true,
             centeredSlides: true,
@@ -153,7 +158,7 @@
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
             },
-          });
+          },
           slidesPerView: 1,
           spaceBetween: 10,
           pagination: {
