@@ -6,27 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Book Store</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
 </head>
 <body>
-<header class="header">
-    <div class="header-1">
-        <a href="#" class="logo"><i class="fas fa-book"></i>Bookly</a>
+    <header class="header">
+        <div class="header-1">
+            <a href="#" class="logo"><i class="fas fa-book"></i> Bookly </a>
 
-        <form action="" class="search-form" >
-            <input type="search" placeholder="Search for a book" class="search-box">
-            <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
-        </form>
+            <form action="" class="search-form" >
+                <input type="search" name="" placeholder="Search for a book" id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
 
-        <div class="icons">
-            <div id="search-btn" class="fas fa-search"></div>
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <div id="login-btn" class="fas fa-user"></div>
-        </div>
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div> <!-- Close the .header-1 div here -->
 
         <div class="header-2">
             <nav class="navbar">
@@ -35,18 +33,46 @@
                 <a href="#arrivals">arrivals</a>
                 <a href="#reviews">reviews</a>
                 <a href="#contact">contact</a>
-
             </nav>
-
         </div>
+    </header>
 
+
+    <!--------bottom navbar-------->
+
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="#contact" class="fas fa-blog"></a>
+    </nav>
+
+    <!--------end bottom navbar-------->
+
+    <!--------login form-------->
+    <div class="login-form-container">
+        <form action="">
+            <h3>sign in </h3>
+            <span>username></span>
+            <input type="email" name="" placeholder="Enter your email" id=""> 
+            <span>Password></span>
+            <input type="password" name="" placeholder="Enter your password" id=""> 
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forgot password ?  <a href="#">click here </a></p>
+            <p>don't have an account ?  <a href="#">sign up </a></p>
+
+
+        </form>
     </div>
 
+    <!--------end login form-------->
 
-
-
-</header>
-
+    <!--------home-------->
 
     <script src="script.js"></script>
 </body>
