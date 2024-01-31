@@ -33,10 +33,20 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 5rem;
 }
-
-html::-webkit-scrollbar {
-    width: 1rem;
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+    
 }
+html::-webkit-scrollbar-thumb {
+    width: 1rem;
+    background-color: var(--green-color);
+
+}
+
+section {
+    padding: 5rem 9%;
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -299,7 +309,62 @@ body {
 .login-form-container #close-login-btn:visited {
     color: var(--green-color);
 }
+/***************************home*********************/
+.home {
+    background: url(../images/banner.avif) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
 
+.home .row .content {
+    flex: 1 1 42rem;
+}
+
+.home .row .books-slider {
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+.home .row .books-slider a {
+    display: inline-block;
+    margin: 0 .5rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+.home .row .books-slider a img {
+    height:25rem;
+
+}
+.home .row .books-slider a:hover img {
+    transform: scale(.9);
+}
+
+.home .row .books-slider .stand {
+    width: 100%;
+    margin-top: -2rem;
+}
+
+.home .row .content h3 {
+    color: var(--black);
+    font-size: 4.5rem;
+}
+
+.home .row .content p {
+    color: var(--light-color);
+    font-size: 1.2rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
 
 
 
@@ -320,6 +385,9 @@ body {
     }
     .header .header-1 .search-form {
         padding: 2rem;
+    }
+    section {
+        padding: 3rem 2rem;
     }
 }
 
@@ -353,6 +421,21 @@ body {
     }
     .header .header-1 .search-form.active {
         top: 115%;
+    }
+    .header .header-1 .search-form input {
+        font-size: 1.5rem;
+    }
+    .header .header-1 .search-form label {
+        font-size: 2rem;
+    }
+    .header .header-1 .icons div, .header .header-1 .icons a {
+        font-size: 2rem;
+    }
+    .home .row .content {
+        text-align: center;
+    }
+    .home .row .content h3 {
+        font-size: 3.5rem;
     }
 }
 
