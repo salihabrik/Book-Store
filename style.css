@@ -765,6 +765,15 @@ body {
     .home .row .content h3 {
         font-size: 2.5rem;
     }
+    .newsletter{
+        background-position: right;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .newsletter form {
+        margin-left: 0;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 450px) {
