@@ -824,6 +824,143 @@ body {
     
 }
 
+.footer .box-container {
+    display: grid;
+    grid-template-column: repeat(auto-fit,minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box {
+    padding: 2rem;
+    border: var(--border);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: var(--black);
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--light-color);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+    color: var(--green-color);
+    padding-right: .5rem;
+    transition: .2s linear;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .box-container .box .links {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: var(--light-color);
+    line-height: 2;
+    display: block;
+}
+
+.footer .box-container .box .links:hover {
+    color: var(--green-color);
+    text-decoration: underline;
+}
+
+.footer .box-container .box .map {
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+
+}
+.footer .share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--green-color);
+    margin: 0 .3rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+}
+
+.footer .share a:hover {
+    background: var(--black);
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    color: var(--light-color);
+    border-top: var(--border);
+}
+
+.footer .credit span {
+    color: var(--green-color);
+}
+
+.footer.credit a {
+    color: var(--green-color);
+}
+
+.footer.credit a:hover {
+    color: var(--black);
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-container.active {
+    display: none;
+}
+
+
+.loader-container img{
+    height: 10rem;
+
+}
+
+
+
+
+
 
 
 
