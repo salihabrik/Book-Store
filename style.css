@@ -721,59 +721,55 @@ body {
     padding: 1rem 0;
 }
 
-.reviews .reviews-slider .box {
+.reviews .reviews-slider {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.reviews .reviews-slider .swiper-box {
     padding: 2rem;
     width: 30rem;
     border: var(--border);
     margin: 2rem 0;
     border-radius: .5rem;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    -ms-border-radius: .5rem;
-    -o-border-radius: .5rem;
     text-align: center;
     background: #eee;
 }
 
-.reviews .reviews-slider .box:hover {
+.reviews .reviews-slider .swiper-box:hover {
     border: var(--border-hover);
 }
-.reviews .reviews-slider .box img {
+
+.reviews .reviews-slider .swiper-box img {
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     object-fit: cover;
 }
 
-.reviews .reviews-slider .box h3 {
+.reviews .reviews-slider .swiper-box h3 {
     font-size: 2.2rem;
     color: var(--black);
     padding: .5rem 0;
 }
-.reviews .reviews-slider .box p {
+
+.reviews .reviews-slider .swiper-box p {
     font-size: 1.4rem;
     color: var(--light-color);
     line-height: 2;
     padding: 1rem 0;
 }
 
-
-.reviews .reviews-slider .box .stars i{
+.reviews .reviews-slider .swiper-box .stars i {
     font-size: 1.5rem;
     color: var(--green-color);
 }
-
 .blogs .blogs-slider .box {
     margin: 2rem 0;
     border-radius: .5rem;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    -ms-border-radius: .5rem;
-    -o-border-radius: .5rem;
     overflow: hidden;
     border: var(--border);
 }
@@ -796,10 +792,6 @@ body {
 
 .blogs .blogs-slider .box:hover .image img {
     transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
 }
 
 .blogs .blogs-slider .box .content {
@@ -818,12 +810,10 @@ body {
     padding: 1rem 0;
 }
 
-.blogs .blogs-slider .box.content .stars i {
+.blogs .blogs-slider .box .content .stars i {
     font-size: 1.5rem;
     color: var(--green-color);
-    
 }
-
 .footer .box-container {
     display: grid;
     grid-template-column: repeat(auto-fit,minmax(25rem, 1fr));
