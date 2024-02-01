@@ -87,7 +87,7 @@ var swiper = new Swiper(".arrivals-slider", {
     loop: true,
     centeredSlides: true,
     autoplay: {
-        delay: 9500,
+        delay: 3500,
         disableOnInteraction: false,
     },
     
@@ -95,10 +95,10 @@ var swiper = new Swiper(".arrivals-slider", {
         0: {
             slidesPerView: 1,
         },
-            768: {
+        768: {
                 slidesPerView: 2,
             },
-            1024: {
+        1024: {
                 slidesPerView: 3,
             },
         },

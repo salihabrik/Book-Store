@@ -657,9 +657,11 @@ body {
     border: var(--border);
     margin: 1rem 0;
 }
+
 .arrivals .arrivals-slider .box:hover {
     border: var(--border-hover);
 }
+
 .arrivals .arrivals-slider .box .image img {
     height: 15rem;
 }
@@ -682,18 +684,9 @@ body {
     font-size: 1.5rem;
     color: var(--green-color);
 }
-.arrivals.arrivals-slider.box.icons {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 2rem 1rem;
-    border: var(--border);
-    margin: 1rem 0;
-}
-.arrivals.arrivals-slider.box.icons a {
-    font-size: 1.5rem;
-    color: var(--green-color);
-}
+
+
+
 
 
 
@@ -734,7 +727,10 @@ body {
     .content-wrapper {
         padding: 2rem;
 
+
     }
+    .content-wraper {
+        padding: 2rem;
     .books-slider {
         padding: 2rem;
         margin-top: 2rem;
